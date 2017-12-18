@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ole2\stm32f1xx_hal.o"
+"ole2\stm32f1xx_hal_rcc_ex.o"
+"ole2\stm32f1xx_hal_gpio_ex.o"
+"ole2\stm32f1xx_hal_flash.o"
+"ole2\stm32f1xx_hal_tim_ex.o"
+"ole2\stm32f1xx_hal_i2c.o"
+"ole2\stm32f1xx_hal_flash_ex.o"
+"ole2\stm32f1xx_hal_dma.o"
+"ole2\stm32f1xx_hal_rcc.o"
+"ole2\stm32f1xx_hal_tim.o"
+"ole2\stm32f1xx_hal_pwr.o"
+"ole2\stm32f1xx_hal_gpio.o"
+"ole2\stm32f1xx_hal_cortex.o"
+"ole2\stm32f1xx_hal_adc_ex.o"
+"ole2\stm32f1xx_hal_adc.o"
+"ole2\startup_stm32f103xb.o"
+"ole2\system_stm32f1xx.o"
+"ole2\stm32f1xx_hal_msp.o"
+"ole2\stm32f1xx_it.o"
+"ole2\main.o"
+"ole2\ssd1306.o"
+"ole2\fonts.o"
+--library_type=microlib --strict --scatter "ole2\ole2.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ole2.map" -o ole2\ole2.axf
